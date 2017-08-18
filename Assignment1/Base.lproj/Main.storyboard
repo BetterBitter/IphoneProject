@@ -143,10 +143,10 @@
             </objects>
             <point key="canvasLocation" x="759.20000000000005" y="-661.61919040479768"/>
         </scene>
-        <!--View Controller-->
+        <!--List Of Bank View Controller-->
         <scene sceneID="Nc4-C6-agQ">
             <objects>
-                <viewController id="L5V-WE-xUF" customClass="ViewController" customModule="Assignment1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="L5V-WE-xUF" customClass="ListOfBankViewController" customModule="Assignment1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VTA-hz-MtN"/>
                         <viewControllerLayoutGuide type="bottom" id="u0g-T9-Sts"/>
@@ -170,8 +170,8 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="L5V-WE-xUF" id="xRn-bV-bzx"/>
-                                    <outlet property="delegate" destination="L5V-WE-xUF" id="V6J-Os-FII"/>
+                                    <outlet property="dataSource" destination="L5V-WE-xUF" id="bfa-rp-8Be"/>
+                                    <outlet property="delegate" destination="L5V-WE-xUF" id="xgh-xC-tAn"/>
                                 </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="List of Banks:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="miu-4Q-VHz">

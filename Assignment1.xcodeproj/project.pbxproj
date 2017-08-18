@@ -14,6 +14,7 @@
 		36486B3A1F4708E100583019 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36486B381F4708E100583019 /* LaunchScreen.storyboard */; };
 		36486B451F4708E100583019 /* Assignment1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36486B441F4708E100583019 /* Assignment1Tests.swift */; };
 		36486B501F4708E100583019 /* Assignment1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36486B4F1F4708E100583019 /* Assignment1UITests.swift */; };
+		365768CA1F471F5100E2C53E /* ListOfBankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365768C91F471F5100E2C53E /* ListOfBankViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		36486B4B1F4708E100583019 /* Assignment1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Assignment1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36486B4F1F4708E100583019 /* Assignment1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment1UITests.swift; sourceTree = "<group>"; };
 		36486B511F4708E100583019 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		365768C91F471F5100E2C53E /* ListOfBankViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOfBankViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				36486B2F1F4708E100583019 /* AppDelegate.swift */,
 				36486B311F4708E100583019 /* ViewController.swift */,
 				36486B331F4708E100583019 /* Main.storyboard */,
+				365768C91F471F5100E2C53E /* ListOfBankViewController.swift */,
 				36486B361F4708E100583019 /* Assets.xcassets */,
 				36486B381F4708E100583019 /* LaunchScreen.storyboard */,
 				36486B3B1F4708E100583019 /* Info.plist */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36486B321F4708E100583019 /* ViewController.swift in Sources */,
+				365768CA1F471F5100E2C53E /* ListOfBankViewController.swift in Sources */,
 				36486B301F4708E100583019 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
