@@ -101,8 +101,8 @@
 			children = (
 				36486B2F1F4708E100583019 /* AppDelegate.swift */,
 				36486B311F4708E100583019 /* ViewController.swift */,
-				36486B331F4708E100583019 /* Main.storyboard */,
 				365768C91F471F5100E2C53E /* ListOfBankViewController.swift */,
+				36486B331F4708E100583019 /* Main.storyboard */,
 				36486B361F4708E100583019 /* Assets.xcassets */,
 				36486B381F4708E100583019 /* LaunchScreen.storyboard */,
 				36486B3B1F4708E100583019 /* Info.plist */,

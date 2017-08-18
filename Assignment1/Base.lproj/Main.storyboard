@@ -51,7 +51,7 @@
         <!--View Controller-->
         <scene sceneID="8SO-xw-LFi">
             <objects>
-                <viewController id="TAV-kw-GJ2" sceneMemberID="viewController">
+                <viewController id="TAV-kw-GJ2" customClass="ViewController" customModule="Assignment1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bye-bm-Sc3"/>
                         <viewControllerLayoutGuide type="bottom" id="OGP-iY-yle"/>
@@ -109,6 +109,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="bankLogoImage" destination="Zid-eU-VhP" id="SGS-Vl-EB0"/>
+                        <outlet property="bankNameLabel" destination="uMm-fe-Ien" id="1eH-Ch-iug"/>
+                        <outlet property="bankPhoneLabel" destination="wqM-5f-SdS" id="I1q-zJ-XHr"/>
+                        <outlet property="bankWebsiteLabel" destination="MvU-x3-gVZ" id="the-le-saI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DlK-Ya-nET" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -164,7 +170,7 @@
                                         <rect key="frame" x="0.0" y="28" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UW1-5C-hC7" id="RwA-6l-bPf">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -184,6 +190,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <segue destination="TAV-kw-GJ2" kind="show" identifier="segueListOfBanks" id="sIv-Uz-F3E"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sae-YE-TL7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

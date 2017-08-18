@@ -9,6 +9,8 @@
 import UIKit
 
 var banks = ["bank1","bank2","bank3"]
+var bankDesc = ["aaaaa","bbbbb","cccccc"]
+var myIndex = 0
 
 class ListOfBankViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -24,5 +26,10 @@ class ListOfBankViewController: UIViewController, UITableViewDelegate, UITableVi
         
         return cell
     }
-
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        myIndex = indexPath.row
+        performSegue(withIdentifier: "segueListOfBanks", sender: self)
+    }
+    
 }

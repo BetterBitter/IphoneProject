@@ -10,7 +10,23 @@ import UIKit
 
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var bankNameLabel: UILabel!
+    @IBOutlet weak var bankLogoImage: UIImageView!
+    @IBOutlet weak var bankPhoneLabel: UILabel!
+    @IBOutlet weak var bankWebsiteLabel: UILabel!
+    
+    
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
 
 
 }
