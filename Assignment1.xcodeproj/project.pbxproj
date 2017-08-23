@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		36486B301F4708E100583019 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36486B2F1F4708E100583019 /* AppDelegate.swift */; };
-		36486B321F4708E100583019 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36486B311F4708E100583019 /* ViewController.swift */; };
 		36486B351F4708E100583019 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36486B331F4708E100583019 /* Main.storyboard */; };
 		36486B371F4708E100583019 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36486B361F4708E100583019 /* Assets.xcassets */; };
 		36486B3A1F4708E100583019 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36486B381F4708E100583019 /* LaunchScreen.storyboard */; };
 		36486B451F4708E100583019 /* Assignment1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36486B441F4708E100583019 /* Assignment1Tests.swift */; };
 		36486B501F4708E100583019 /* Assignment1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36486B4F1F4708E100583019 /* Assignment1UITests.swift */; };
+		364A6C151F4D9B5700DD91A8 /* BankInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364A6C141F4D9B5700DD91A8 /* BankInformationViewController.swift */; };
+		364A6C171F4D9C2600DD91A8 /* Banks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364A6C161F4D9C2600DD91A8 /* Banks.swift */; };
+		364A6C191F4D9F8700DD91A8 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364A6C181F4D9F8700DD91A8 /* HomeController.swift */; };
+		364A6C1B1F4D9FF600DD91A8 /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364A6C1A1F4D9FF600DD91A8 /* MapController.swift */; };
 		365768CA1F471F5100E2C53E /* ListOfBankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365768C91F471F5100E2C53E /* ListOfBankViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,7 +40,6 @@
 /* Begin PBXFileReference section */
 		36486B2C1F4708E100583019 /* Assignment1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36486B2F1F4708E100583019 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		36486B311F4708E100583019 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		36486B341F4708E100583019 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		36486B361F4708E100583019 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36486B391F4708E100583019 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,6 +50,10 @@
 		36486B4B1F4708E100583019 /* Assignment1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Assignment1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36486B4F1F4708E100583019 /* Assignment1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment1UITests.swift; sourceTree = "<group>"; };
 		36486B511F4708E100583019 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		364A6C141F4D9B5700DD91A8 /* BankInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankInformationViewController.swift; sourceTree = "<group>"; };
+		364A6C161F4D9C2600DD91A8 /* Banks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Banks.swift; sourceTree = "<group>"; };
+		364A6C181F4D9F8700DD91A8 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		364A6C1A1F4D9FF600DD91A8 /* MapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
 		365768C91F471F5100E2C53E /* ListOfBankViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOfBankViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,9 +105,9 @@
 		36486B2E1F4708E100583019 /* Assignment1 */ = {
 			isa = PBXGroup;
 			children = (
+				364A6C131F4D9A1D00DD91A8 /* Controller */,
+				364A6C121F4D9A1600DD91A8 /* Model */,
 				36486B2F1F4708E100583019 /* AppDelegate.swift */,
-				36486B311F4708E100583019 /* ViewController.swift */,
-				365768C91F471F5100E2C53E /* ListOfBankViewController.swift */,
 				36486B331F4708E100583019 /* Main.storyboard */,
 				36486B361F4708E100583019 /* Assets.xcassets */,
 				36486B381F4708E100583019 /* LaunchScreen.storyboard */,
@@ -126,6 +132,25 @@
 				36486B511F4708E100583019 /* Info.plist */,
 			);
 			path = Assignment1UITests;
+			sourceTree = "<group>";
+		};
+		364A6C121F4D9A1600DD91A8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				364A6C161F4D9C2600DD91A8 /* Banks.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		364A6C131F4D9A1D00DD91A8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				364A6C141F4D9B5700DD91A8 /* BankInformationViewController.swift */,
+				365768C91F471F5100E2C53E /* ListOfBankViewController.swift */,
+				364A6C181F4D9F8700DD91A8 /* HomeController.swift */,
+				364A6C1A1F4D9FF600DD91A8 /* MapController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +287,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36486B321F4708E100583019 /* ViewController.swift in Sources */,
+				364A6C171F4D9C2600DD91A8 /* Banks.swift in Sources */,
+				364A6C151F4D9B5700DD91A8 /* BankInformationViewController.swift in Sources */,
 				365768CA1F471F5100E2C53E /* ListOfBankViewController.swift in Sources */,
 				36486B301F4708E100583019 /* AppDelegate.swift in Sources */,
+				364A6C1B1F4D9FF600DD91A8 /* MapController.swift in Sources */,
+				364A6C191F4D9F8700DD91A8 /* HomeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
