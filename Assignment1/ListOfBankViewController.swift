@@ -9,27 +9,26 @@
 import UIKit
 
 
-
 class ListOfBankViewController: UIViewController, UITableViewDelegate, UITableViewDataSource
 {
     var LOB = Banks()
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return LOB.banks.count
+        return LOB.bankName.count
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
-        cell.textLabel?.text = LOB.banks[indexPath.row]
+        cell.textLabel?.text = LOB.bankName[indexPath.row]
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
-        LOB.myIndex = indexPath.row
+        myIndex = indexPath.row
         performSegue(withIdentifier: LOB.segue, sender: self)
     }
 }

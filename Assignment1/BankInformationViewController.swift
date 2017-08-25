@@ -15,11 +15,17 @@ class BankInformationViewController: UIViewController {
     @IBOutlet weak var bankLogoImage: UIImageView!
     @IBOutlet weak var bankPhoneLabel: UILabel!
     @IBOutlet weak var bankWebsiteLabel: UILabel!
-    
+    var LOB = Banks()
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+        bankNameLabel.text = LOB.bankName[myIndex]
+        bankPhoneLabel.text = LOB.bankTelephone[myIndex]
+        bankWebsiteLabel.text = LOB.bankWebsite[myIndex]
+        bankLogoImage.image = UIImage (named: LOB.bankLogo[myIndex])
+        
     }
     
     override func didReceiveMemoryWarning() {
