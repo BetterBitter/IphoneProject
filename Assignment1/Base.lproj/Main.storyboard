@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -80,6 +81,7 @@
                                 <rect key="frame" x="67" y="125" width="240" height="131"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="kew-CT-vD4"/>
+                                    <constraint firstAttribute="width" secondItem="Zid-eU-VhP" secondAttribute="height" multiplier="240:131" id="nBT-g0-32E"/>
                                     <constraint firstAttribute="height" constant="131" id="tyX-z7-bBb"/>
                                 </constraints>
                             </imageView>
@@ -139,7 +141,6 @@
                             <constraint firstItem="MvU-x3-gVZ" firstAttribute="top" secondItem="cjN-PQ-638" secondAttribute="bottom" constant="8" id="S0I-zc-Hir"/>
                             <constraint firstItem="zsa-ny-5BO" firstAttribute="leading" secondItem="MkL-vr-KbP" secondAttribute="leadingMargin" id="TZh-UF-sxT"/>
                             <constraint firstItem="J5Z-6b-Q8b" firstAttribute="top" secondItem="Zid-eU-VhP" secondAttribute="bottom" constant="50" id="cGh-Eo-gjm"/>
-                            <constraint firstItem="OGP-iY-yle" firstAttribute="top" secondItem="MvU-x3-gVZ" secondAttribute="bottom" constant="155" id="fYE-0b-adt"/>
                             <constraint firstItem="wqM-5f-SdS" firstAttribute="centerX" secondItem="MkL-vr-KbP" secondAttribute="centerX" id="fy5-Yl-Dsk"/>
                             <constraint firstItem="Zid-eU-VhP" firstAttribute="leading" secondItem="MkL-vr-KbP" secondAttribute="leadingMargin" constant="51" id="gJD-2M-tSe"/>
                             <constraint firstItem="wqM-5f-SdS" firstAttribute="top" secondItem="hJg-dp-vzb" secondAttribute="bottom" constant="8" id="hBs-ys-f1B"/>
