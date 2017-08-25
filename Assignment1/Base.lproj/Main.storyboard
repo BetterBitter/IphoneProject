@@ -11,10 +11,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home Controller-->
+        <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomeController" customModule="Assignment1" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="Assignment1" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -33,7 +33,7 @@
                                 <rect key="frame" x="143" y="293" width="90" height="30"/>
                                 <state key="normal" title="Find Me ATM"/>
                                 <connections>
-                                    <segue destination="BDf-GA-uob" kind="show" id="8Hc-wC-PXq"/>
+                                    <segue destination="s6d-Ml-Ahj" kind="show" id="pPQ-R8-ABL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qfi-UM-GPH">
@@ -161,55 +161,114 @@
             </objects>
             <point key="canvasLocation" x="357.60000000000002" y="836.13193403298362"/>
         </scene>
-        <!--Map Controller-->
-        <scene sceneID="9lL-Kp-tYk">
+        <!--Map Satellite View Controller-->
+        <scene sceneID="QDC-9X-Bd9">
             <objects>
-                <viewController id="BDf-GA-uob" customClass="MapController" customModule="Assignment1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Kn0-LI-XSK" userLabel="Map Satellite View Controller" customClass="MapSatelliteViewController" customModule="Assignment1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Sw0-C0-BG1"/>
-                        <viewControllerLayoutGuide type="bottom" id="Ctd-ch-8ZF"/>
+                        <viewControllerLayoutGuide type="top" id="N9z-cQ-bF4"/>
+                        <viewControllerLayoutGuide type="bottom" id="MxI-Sx-1c6"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="XWm-UM-4CV">
+                    <view key="view" contentMode="scaleToFill" id="4gN-6E-lHe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAG-N7-8gb">
-                                <rect key="frame" x="16" y="20" width="45" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0h-lN-u4e">
+                                <rect key="frame" x="16" y="20" width="45" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="EW4-0l-L4P"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="H7I-wd-748"/>
                                 </connections>
                             </button>
-                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lGs-r2-cUG">
-                                <rect key="frame" x="0.0" y="618" width="375" height="49"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <items>
-                                    <tabBarItem systemItem="favorites" id="hVC-jC-Kaf"/>
-                                    <tabBarItem systemItem="more" id="0tC-bp-yYG"/>
-                                </items>
-                            </tabBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YWV-5F-nI5">
-                                <rect key="frame" x="0.0" y="66" width="375" height="552"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map-satellite-view" translatesAutoresizingMaskIntoConstraints="NO" id="Lmm-bY-s4a">
+                                <rect key="frame" x="0.0" y="68" width="375" height="550"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Lmm-bY-s4a" secondAttribute="height" multiplier="15:22" id="viC-Fh-TWE"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="lGs-r2-cUG" firstAttribute="leading" secondItem="YWV-5F-nI5" secondAttribute="leading" id="DR7-KB-Yt9"/>
-                            <constraint firstItem="Ctd-ch-8ZF" firstAttribute="top" secondItem="lGs-r2-cUG" secondAttribute="bottom" id="EWF-R3-2hO"/>
-                            <constraint firstItem="lGs-r2-cUG" firstAttribute="top" secondItem="YWV-5F-nI5" secondAttribute="bottom" id="LcN-lj-ush"/>
-                            <constraint firstItem="dAG-N7-8gb" firstAttribute="leading" secondItem="XWm-UM-4CV" secondAttribute="leadingMargin" id="Qru-L7-D0B"/>
-                            <constraint firstItem="dAG-N7-8gb" firstAttribute="top" secondItem="Sw0-C0-BG1" secondAttribute="bottom" id="Ta3-hj-LUq"/>
-                            <constraint firstItem="YWV-5F-nI5" firstAttribute="top" secondItem="dAG-N7-8gb" secondAttribute="bottom" constant="10" id="q0T-P4-YGY"/>
-                            <constraint firstAttribute="trailing" secondItem="YWV-5F-nI5" secondAttribute="trailing" id="rTt-M9-VVm"/>
-                            <constraint firstItem="lGs-r2-cUG" firstAttribute="trailing" secondItem="YWV-5F-nI5" secondAttribute="trailing" id="ukq-c2-Vxh"/>
-                            <constraint firstItem="YWV-5F-nI5" firstAttribute="leading" secondItem="XWm-UM-4CV" secondAttribute="leading" id="xlz-KJ-w3g"/>
+                            <constraint firstItem="Lmm-bY-s4a" firstAttribute="leading" secondItem="4gN-6E-lHe" secondAttribute="leading" id="7aD-Yr-FJc"/>
+                            <constraint firstAttribute="trailing" secondItem="Lmm-bY-s4a" secondAttribute="trailing" id="EKW-bx-Haf"/>
+                            <constraint firstItem="H0h-lN-u4e" firstAttribute="leading" secondItem="4gN-6E-lHe" secondAttribute="leadingMargin" id="Ixl-ZS-e0Y"/>
+                            <constraint firstItem="Lmm-bY-s4a" firstAttribute="top" secondItem="H0h-lN-u4e" secondAttribute="bottom" constant="15" id="MMq-Ch-qDb"/>
+                            <constraint firstItem="MxI-Sx-1c6" firstAttribute="top" secondItem="Lmm-bY-s4a" secondAttribute="bottom" id="PYj-KK-qnq"/>
+                            <constraint firstItem="H0h-lN-u4e" firstAttribute="top" secondItem="N9z-cQ-bF4" secondAttribute="bottom" id="mTL-7C-dTa"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Satellite" image="satellite-icon" id="WFE-pZ-WUw" userLabel="Item 2"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1bk-wb-jLo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CzT-T7-gXk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="759.20000000000005" y="-661.61919040479768"/>
+            <point key="canvasLocation" x="1705" y="-743"/>
+        </scene>
+        <!--Map Normal View Controller-->
+        <scene sceneID="MjB-eT-okn">
+            <objects>
+                <viewController id="cI5-rt-b7Q" userLabel="Map Normal View Controller" customClass="MapNormalViewController" customModule="Assignment1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NmZ-z3-oz0"/>
+                        <viewControllerLayoutGuide type="bottom" id="0ZD-f2-dUh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ghy-bY-e1W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map-normal-view" translatesAutoresizingMaskIntoConstraints="NO" id="VNT-Cj-nIx">
+                                <rect key="frame" x="0.0" y="68" width="375" height="550"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="VNT-Cj-nIx" secondAttribute="height" multiplier="15:22" id="Ugr-Z8-jCL"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3eg-Kq-hnf">
+                                <rect key="frame" x="16" y="20" width="45" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="ecm-ca-Trw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VNT-Cj-nIx" firstAttribute="leading" secondItem="Ghy-bY-e1W" secondAttribute="leading" id="T6L-82-7Vx"/>
+                            <constraint firstItem="3eg-Kq-hnf" firstAttribute="top" secondItem="NmZ-z3-oz0" secondAttribute="bottom" id="ap4-ol-PR1"/>
+                            <constraint firstAttribute="trailing" secondItem="VNT-Cj-nIx" secondAttribute="trailing" id="ilZ-4r-yj2"/>
+                            <constraint firstItem="VNT-Cj-nIx" firstAttribute="top" secondItem="3eg-Kq-hnf" secondAttribute="bottom" constant="15" id="lEt-zp-gzr"/>
+                            <constraint firstItem="3eg-Kq-hnf" firstAttribute="leading" secondItem="Ghy-bY-e1W" secondAttribute="leadingMargin" id="vT9-M4-wi5"/>
+                            <constraint firstItem="0ZD-f2-dUh" firstAttribute="top" secondItem="VNT-Cj-nIx" secondAttribute="bottom" id="xqe-qO-1Cd"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Normal" image="satellite-icon" id="oeQ-iH-o2H" userLabel="Item 1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LvC-jd-JSz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1704.8" y="-1398.3508245877063"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="8Dh-Jr-ziG">
+            <objects>
+                <tabBarController id="s6d-Ml-Ahj" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="9E6-2v-GCl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="cI5-rt-b7Q" kind="relationship" relationship="viewControllers" id="WDe-lN-SA7"/>
+                        <segue destination="Kn0-LI-XSK" kind="relationship" relationship="viewControllers" id="9ke-eH-ayK"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KyS-Cn-toD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="frL-7k-oWe">
+                    <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                </button>
+            </objects>
+            <point key="canvasLocation" x="588" y="-708"/>
         </scene>
         <!--List Of Bank View Controller-->
         <scene sceneID="Nc4-C6-agQ">
@@ -231,7 +290,7 @@
                                         <rect key="frame" x="0.0" y="28" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UW1-5C-hC7" id="RwA-6l-bPf">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -278,8 +337,13 @@
             <point key="canvasLocation" x="981.60000000000002" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="map-normal-view" width="632" height="328"/>
+        <image name="map-satellite-view" width="632" height="328"/>
+        <image name="satellite-icon" width="20" height="20"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="EW4-0l-L4P"/>
-        <segue reference="PyA-8c-dym"/>
+        <segue reference="H7I-wd-748"/>
+        <segue reference="xiW-Pq-nX6"/>
     </inferredMetricsTieBreakers>
 </document>

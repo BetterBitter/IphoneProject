@@ -15,9 +15,10 @@
 		36486B501F4708E100583019 /* Assignment1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36486B4F1F4708E100583019 /* Assignment1UITests.swift */; };
 		364A6C151F4D9B5700DD91A8 /* BankInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364A6C141F4D9B5700DD91A8 /* BankInformationViewController.swift */; };
 		364A6C171F4D9C2600DD91A8 /* Banks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364A6C161F4D9C2600DD91A8 /* Banks.swift */; };
-		364A6C191F4D9F8700DD91A8 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364A6C181F4D9F8700DD91A8 /* HomeController.swift */; };
-		364A6C1B1F4D9FF600DD91A8 /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364A6C1A1F4D9FF600DD91A8 /* MapController.swift */; };
+		364A6C191F4D9F8700DD91A8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364A6C181F4D9F8700DD91A8 /* HomeViewController.swift */; };
 		365768CA1F471F5100E2C53E /* ListOfBankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365768C91F471F5100E2C53E /* ListOfBankViewController.swift */; };
+		36767DE11F503815004C11D5 /* MapNormalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36767DE01F503815004C11D5 /* MapNormalViewController.swift */; };
+		36767DE31F503824004C11D5 /* MapSatelliteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36767DE21F503824004C11D5 /* MapSatelliteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,9 +53,10 @@
 		36486B511F4708E100583019 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		364A6C141F4D9B5700DD91A8 /* BankInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankInformationViewController.swift; sourceTree = "<group>"; };
 		364A6C161F4D9C2600DD91A8 /* Banks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Banks.swift; sourceTree = "<group>"; };
-		364A6C181F4D9F8700DD91A8 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
-		364A6C1A1F4D9FF600DD91A8 /* MapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
+		364A6C181F4D9F8700DD91A8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		365768C91F471F5100E2C53E /* ListOfBankViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOfBankViewController.swift; sourceTree = "<group>"; };
+		36767DE01F503815004C11D5 /* MapNormalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapNormalViewController.swift; sourceTree = "<group>"; };
+		36767DE21F503824004C11D5 /* MapSatelliteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapSatelliteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,12 +147,21 @@
 		364A6C131F4D9A1D00DD91A8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				36767DDF1F5037EC004C11D5 /* MapController */,
 				364A6C141F4D9B5700DD91A8 /* BankInformationViewController.swift */,
 				365768C91F471F5100E2C53E /* ListOfBankViewController.swift */,
-				364A6C181F4D9F8700DD91A8 /* HomeController.swift */,
-				364A6C1A1F4D9FF600DD91A8 /* MapController.swift */,
+				364A6C181F4D9F8700DD91A8 /* HomeViewController.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		36767DDF1F5037EC004C11D5 /* MapController */ = {
+			isa = PBXGroup;
+			children = (
+				36767DE01F503815004C11D5 /* MapNormalViewController.swift */,
+				36767DE21F503824004C11D5 /* MapSatelliteViewController.swift */,
+			);
+			name = MapController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,8 +302,9 @@
 				364A6C151F4D9B5700DD91A8 /* BankInformationViewController.swift in Sources */,
 				365768CA1F471F5100E2C53E /* ListOfBankViewController.swift in Sources */,
 				36486B301F4708E100583019 /* AppDelegate.swift in Sources */,
-				364A6C1B1F4D9FF600DD91A8 /* MapController.swift in Sources */,
-				364A6C191F4D9F8700DD91A8 /* HomeController.swift in Sources */,
+				36767DE11F503815004C11D5 /* MapNormalViewController.swift in Sources */,
+				36767DE31F503824004C11D5 /* MapSatelliteViewController.swift in Sources */,
+				364A6C191F4D9F8700DD91A8 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
