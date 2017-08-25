@@ -23,26 +23,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ima-uJ-byX" userLabel="Logo">
-                                <rect key="frame" x="66" y="80" width="243" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="KUX-Zf-OZe"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ds-DP-WJX">
-                                <rect key="frame" x="143" y="293" width="90" height="30"/>
+                                <rect key="frame" x="143" y="258" width="90" height="30"/>
                                 <state key="normal" title="Find Me ATM"/>
                                 <connections>
                                     <segue destination="s6d-Ml-Ahj" kind="show" id="pPQ-R8-ABL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qfi-UM-GPH">
-                                <rect key="frame" x="148" y="378" width="78" height="30"/>
+                                <rect key="frame" x="148" y="343" width="78" height="30"/>
                                 <state key="normal" title="List of ATM"/>
                                 <connections>
                                     <segue destination="L5V-WE-xUF" kind="show" id="xiW-Pq-nX6"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myatm-logo" translatesAutoresizingMaskIntoConstraints="NO" id="ima-uJ-byX" userLabel="Logo">
+                                <rect key="frame" x="66" y="100" width="243" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="243" id="1Sc-vT-dwt"/>
+                                    <constraint firstAttribute="width" secondItem="ima-uJ-byX" secondAttribute="height" multiplier="243:128" id="4EK-UE-qVp"/>
+                                    <constraint firstAttribute="height" constant="128" id="KUX-Zf-OZe"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -50,8 +52,8 @@
                             <constraint firstAttribute="trailingMargin" secondItem="ima-uJ-byX" secondAttribute="trailing" constant="50" id="HR2-Hl-1SC"/>
                             <constraint firstItem="ima-uJ-byX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="I1u-4F-fdG"/>
                             <constraint firstItem="Qfi-UM-GPH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QrN-DG-ZDr"/>
-                            <constraint firstItem="3ds-DP-WJX" firstAttribute="top" secondItem="ima-uJ-byX" secondAttribute="bottom" constant="85" id="UmD-7C-cqP"/>
-                            <constraint firstItem="ima-uJ-byX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="X1n-oJ-c3h"/>
+                            <constraint firstItem="3ds-DP-WJX" firstAttribute="top" secondItem="ima-uJ-byX" secondAttribute="bottom" constant="30" id="UmD-7C-cqP"/>
+                            <constraint firstItem="ima-uJ-byX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="X1n-oJ-c3h"/>
                             <constraint firstItem="3ds-DP-WJX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ruZ-YZ-DgH"/>
                         </constraints>
                     </view>
@@ -187,6 +189,12 @@
                                     <constraint firstAttribute="width" secondItem="Lmm-bY-s4a" secondAttribute="height" multiplier="15:22" id="viC-Fh-TWE"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Map" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TpA-87-aIa">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -195,14 +203,18 @@
                             <constraint firstItem="H0h-lN-u4e" firstAttribute="leading" secondItem="4gN-6E-lHe" secondAttribute="leadingMargin" id="Ixl-ZS-e0Y"/>
                             <constraint firstItem="Lmm-bY-s4a" firstAttribute="top" secondItem="H0h-lN-u4e" secondAttribute="bottom" constant="15" id="MMq-Ch-qDb"/>
                             <constraint firstItem="MxI-Sx-1c6" firstAttribute="top" secondItem="Lmm-bY-s4a" secondAttribute="bottom" id="PYj-KK-qnq"/>
+                            <constraint firstItem="TpA-87-aIa" firstAttribute="leading" secondItem="Lmm-bY-s4a" secondAttribute="leading" id="Y5n-Qf-K8m"/>
+                            <constraint firstItem="TpA-87-aIa" firstAttribute="centerY" secondItem="H0h-lN-u4e" secondAttribute="centerY" id="hT6-V1-bIX"/>
+                            <constraint firstItem="TpA-87-aIa" firstAttribute="top" secondItem="4gN-6E-lHe" secondAttribute="top" id="kPm-f2-lBq"/>
                             <constraint firstItem="H0h-lN-u4e" firstAttribute="top" secondItem="N9z-cQ-bF4" secondAttribute="bottom" id="mTL-7C-dTa"/>
+                            <constraint firstItem="TpA-87-aIa" firstAttribute="trailing" secondItem="Lmm-bY-s4a" secondAttribute="trailing" id="yC4-Cg-oOj"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Satellite" image="satellite-icon" id="WFE-pZ-WUw" userLabel="Item 2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CzT-T7-gXk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1705" y="-743"/>
+            <point key="canvasLocation" x="1704.8" y="-743.47826086956525"/>
         </scene>
         <!--Map Normal View Controller-->
         <scene sceneID="MjB-eT-okn">
@@ -230,13 +242,23 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="ecm-ca-Trw"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Map" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qj4-Oc-tof">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="qj4-Oc-tof" firstAttribute="centerY" secondItem="3eg-Kq-hnf" secondAttribute="centerY" id="HX5-oo-anP"/>
                             <constraint firstItem="VNT-Cj-nIx" firstAttribute="leading" secondItem="Ghy-bY-e1W" secondAttribute="leading" id="T6L-82-7Vx"/>
+                            <constraint firstItem="qj4-Oc-tof" firstAttribute="trailing" secondItem="VNT-Cj-nIx" secondAttribute="trailing" id="Url-Oh-8d0"/>
                             <constraint firstItem="3eg-Kq-hnf" firstAttribute="top" secondItem="NmZ-z3-oz0" secondAttribute="bottom" id="ap4-ol-PR1"/>
                             <constraint firstAttribute="trailing" secondItem="VNT-Cj-nIx" secondAttribute="trailing" id="ilZ-4r-yj2"/>
+                            <constraint firstItem="qj4-Oc-tof" firstAttribute="leading" secondItem="VNT-Cj-nIx" secondAttribute="leading" id="k2e-Hi-aNs"/>
                             <constraint firstItem="VNT-Cj-nIx" firstAttribute="top" secondItem="3eg-Kq-hnf" secondAttribute="bottom" constant="15" id="lEt-zp-gzr"/>
+                            <constraint firstItem="qj4-Oc-tof" firstAttribute="top" secondItem="Ghy-bY-e1W" secondAttribute="top" id="qQr-aD-TVB"/>
                             <constraint firstItem="3eg-Kq-hnf" firstAttribute="leading" secondItem="Ghy-bY-e1W" secondAttribute="leadingMargin" id="vT9-M4-wi5"/>
                             <constraint firstItem="0ZD-f2-dUh" firstAttribute="top" secondItem="VNT-Cj-nIx" secondAttribute="bottom" id="xqe-qO-1Cd"/>
                         </constraints>
@@ -340,6 +362,7 @@
     <resources>
         <image name="map-normal-view" width="632" height="328"/>
         <image name="map-satellite-view" width="632" height="328"/>
+        <image name="myatm-logo" width="131" height="96"/>
         <image name="satellite-icon" width="20" height="20"/>
     </resources>
     <inferredMetricsTieBreakers>
