@@ -28,9 +28,23 @@ class Assignment1UITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func UITesting() {
+        let app = XCUIApplication()
+        let tabBars = XCUIApplication().tabBars
+        app.launch()
+        XCTAssertEqual(app.images.count, 1)
+        XCTAssertEqual(app.buttons.count, 2)
+        app.buttons["Find Me ATM"].tap()
+        XCTAssertEqual(app.images.count, 1)
+        XCTAssertEqual(app.buttons.count, 1)
+        tabBars.buttons["Satellite"].tap()
+        tabBars.buttons["Normal"].tap()
+        app.buttons["back"].tap()
+        app.buttons["List of ATM"].tap()
+        XCTAssertEqual(app.buttons.count, 1)
+        XCUIApplication().tables.staticTexts["Commonwealth"].tap()
+        XCTAssertEqual(app.images.count, 1)
+        XCTAssertEqual(app.buttons.count, 1)
     }
     
 }
